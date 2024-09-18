@@ -1,0 +1,92 @@
+.chatlist{
+    flex: 1;
+    overflow: scroll;
+    /* Custom scrollbar for WebKit browsers */
+
+    .search{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+       
+        
+    }
+    
+}
+.searchBar{
+    flex: 1;
+    background-color: rgb(40, 38, 38);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 3px;
+  
+   
+  }
+
+.searchBar input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color:white ;
+    flex: 1;
+  }
+
+.searchBar img{
+    width: 20px;
+    height: 20px;
+  }
+  .add{
+    width: 36px;
+    height: 36px;
+    background-color: rgb(40, 38, 38);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+.items{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #dddddd35;
+
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        object-fit: cover;
+    }
+    .texts{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+
+        span{
+            font-weight: 500;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 300px;
+        }
+    }
+}
+::-webkit-scrollbar {
+    width: 5px; /* Width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000; /* Color of the scrollbar thumb */
+    border-radius: 2px; /* Roundness of the scrollbar thumb */
+    border: 0px solid #000000; /* Padding around the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    display: none; 
+}
