@@ -2,7 +2,7 @@ import Chats from "./components/chats/chats"
 import Details from "./components/details/details"
 import List from "./list/list"
 import Login from "./login/Login"
-import Notification from "./components/notification/notification"
+import Notification from "./components/notification/notification.jsx"
 import { useEffect } from "react"
 import { onAuthStateChanged } from "firebase/auth"
 import { auth } from "./lib/fierbase"
@@ -15,7 +15,10 @@ const App = () => {
   const {currentuser,isLoading,fetchuserinfo}=useUserstore()
   useEffect(()=>{
     const unSub= onAuthStateChanged(auth,(user)=>{
+      if(!user){fetchuserinfo(user?.uid)} 
+      else{
      fetchuserinfo(user?.uid)
+    }
     })
     return ()=>{
       unSub()

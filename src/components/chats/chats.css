@@ -151,7 +151,7 @@ input{
     &:disabled{
         background-color: rgba(33, 33, 35, 0.442);
         cursor: not-allowed;
-        color: rgb(255, 255, 255);
+        
        }
 }
 .sendbtn{
