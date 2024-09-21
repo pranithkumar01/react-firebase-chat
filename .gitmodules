@@ -1,0 +1,7 @@
+[submodule "ChatApp"]
+
+path = ChatApp
+
+url = https://github.com/your
+
+-username/ChatApp.git
